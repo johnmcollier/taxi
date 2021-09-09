@@ -22,6 +22,7 @@ func main() {
 
 	addr := fmt.Sprintf(":%d", *port)
 	log.Printf("version %s listening on %s\n", CommitSHA[:6], addr)
+	log.Println("Test")
 	log.Fatal(http.ListenAndServe(addr, nil))
 }
 
